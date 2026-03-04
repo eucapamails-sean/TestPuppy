@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources — Pawprint & Co. Veterinary Wellness</title>
+  <meta name="description" content="Pet parent resources from Pawprint & Co. Guides on new pet care, nutrition, dental health, senior wellness, Florida pet safety, and emergency guidance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Emergency Banner -->
+  <div class="emergency-banner" role="alert">
+    &#x1F6A8; 24/7 Emergency Line: <a href="tel:4075550911">(407) 555-0911</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav-wrapper" role="navigation" aria-label="Main navigation">
+    <div class="nav">
+      <a href="index.html" class="nav-logo" aria-label="Pawprint & Co. Home">Pawprint <span>&</span> Co.</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="team.html">Our Team</a>
+        <a href="resources.html" class="active" aria-current="page">Resources</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay" aria-hidden="true"></div>
+  <div class="mobile-drawer" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="team.html">Our Team</a>
+    <a href="resources.html" class="active">Resources</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <!-- 4.1 Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="fade-in-up">Pet Parent Resources</h1>
+        <p class="fade-in-up">Because informed pet parents raise healthier, happier animals.</p>
+      </div>
+    </section>
+
+    <!-- 4.2 Seasonal Alert Banner -->
+    <div class="seasonal-alert" role="alert">
+      &#x26A0;&#xFE0F; Florida Heartworm Season is Year-Round. Is your pet protected? If you've missed a dose, call us — we may need to re-test before resuming prevention.
+    </div>
+
+    <!-- 4.3 Resource Cards Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="resources-grid">
+
+          <!-- Card 1: New Pet Owner Guide -->
+          <article class="resource-card fade-in-up">
+            <div class="resource-card-header">
+              <span class="resource-tag">Getting Started</span>
+              <h3>New Pet Owner Guide</h3>
+              <p>Bringing home a new puppy or kitten? Here's everything you need to know about the first year — from vaccination schedules to nutrition to socialization windows.</p>
+            </div>
+            <div class="resource-meta">
+              <span class="read-time">8 min read</span>
+              <button class="expand-btn" data-expand="resource-1" aria-expanded="false" aria-controls="resource-1">
+                <span class="expand-text">Read More</span> <span class="expand-icon" aria-hidden="true">&#x25BC;</span>
+              </button>
+            </div>
+            <div class="resource-expanded" id="resource-1">
+              <ul>
+                <li><strong>Puppy vaccination schedule:</strong> 8, 12, 16 weeks + rabies at 16 weeks</li>
+                <li><strong>Kitten vaccination schedule:</strong> 8, 12, 16 weeks + rabies at 12-16 weeks</li>
+                <li><strong>Spay/neuter timing:</strong> 6 months for cats, varies for dogs by breed</li>
+                <li><strong>Nutrition basics:</strong> Avoid grain-free boutique diets unless medically indicated — ask us why</li>
+                <li><strong>Socialization window:</strong> 3-14 weeks is critical for puppies</li>
+                <li><strong>First vet visit checklist:</strong> Bring any records from breeder/rescue, list of current food, list of questions</li>
+                <li><strong>What to expect at the first visit:</strong> Full physical exam, fecal test, deworming, vaccination plan, microchip discussion</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 2: Understanding Pet Nutrition -->
+          <article class="resource-card fade-in-up">
+            <div class="resource-card-header">
+              <span class="resource-tag">Nutrition</span>
+              <h3>Understanding Pet Nutrition</h3>
+              <p>Not all pet food is created equal. Learn how to read labels, why "grain-free" isn't always better, and what Dr. Okafor actually recommends.</p>
+            </div>
+            <div class="resource-meta">
+              <span class="read-time">6 min read</span>
+              <button class="expand-btn" data-expand="resource-2" aria-expanded="false" aria-controls="resource-2">
+                <span class="expand-text">Read More</span> <span class="expand-icon" aria-hidden="true">&#x25BC;</span>
+              </button>
+            </div>
+            <div class="resource-expanded" id="resource-2">
+              <ul>
+                <li><strong>AAFCO statement:</strong> What to look for on every bag</li>
+                <li><strong>WSAVA-compliant brands:</strong> Purina Pro Plan, Royal Canin, Hill's Science Diet</li>
+                <li><strong>Grain-free/DCM concern:</strong> Dilated cardiomyopathy linked to boutique grain-free diets</li>
+                <li><strong>Proper feeding amounts:</strong> Most pets are overfed</li>
+                <li><strong>Prescription diets:</strong> When needed for kidney disease, urinary issues, food allergies</li>
+                <li><strong>Treats:</strong> Should be &lt;10% of daily calories</li>
+                <li><strong>Safe people food:</strong> Plain chicken, carrots, blueberries, green beans</li>
+                <li><strong>Toxic people food:</strong> Grapes, raisins, xylitol, chocolate, onions, garlic, macadamia nuts</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 3: Dental Health Guide -->
+          <article class="resource-card fade-in-up">
+            <div class="resource-card-header">
+              <span class="resource-tag">Dental</span>
+              <h3>Dental Health Guide</h3>
+              <p>87% of dogs have dental disease by age 3. Here's what to watch for, how to brush your pet's teeth (yes, really), and why dental cleanings require anesthesia.</p>
+            </div>
+            <div class="resource-meta">
+              <span class="read-time">5 min read</span>
+              <button class="expand-btn" data-expand="resource-3" aria-expanded="false" aria-controls="resource-3">
+                <span class="expand-text">Read More</span> <span class="expand-icon" aria-hidden="true">&#x25BC;</span>
+              </button>
+            </div>
+            <div class="resource-expanded" id="resource-3">
+              <ul>
+                <li><strong>Signs of dental disease:</strong> Bad breath, drooling, dropping food, pawing at mouth, swollen gums</li>
+                <li><strong>Why anesthesia is necessary:</strong> Can't take dental x-rays on an awake patient, can't probe below the gumline safely</li>
+                <li><strong>"Anesthesia-free dental" is dangerous:</strong> We do not recommend or perform it</li>
+                <li><strong>At-home dental care:</strong> Daily brushing with pet-specific toothpaste (not human toothpaste — xylitol is toxic)</li>
+                <li><strong>Dental chews and water additives:</strong> Helpful supplements but not replacements for professional cleaning</li>
+                <li><strong>How often:</strong> Annual dental exam minimum, professional cleaning every 1-3 years depending on breed and condition</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 4: Senior Pet Care -->
+          <article class="resource-card fade-in-up">
+            <div class="resource-card-header">
+              <span class="resource-tag">Senior Wellness</span>
+              <h3>Senior Pet Care</h3>
+              <p>Dogs and cats age faster than we'd like. Learn the signs of aging, when to start senior screenings, and how to keep your older pet comfortable.</p>
+            </div>
+            <div class="resource-meta">
+              <span class="read-time">7 min read</span>
+              <button class="expand-btn" data-expand="resource-4" aria-expanded="false" aria-controls="resource-4">
+                <span class="expand-text">Read More</span> <span class="expand-icon" aria-hidden="true">&#x25BC;</span>
+              </button>
+            </div>
+            <div class="resource-expanded" id="resource-4">
+              <ul>
+                <li><strong>When is a pet "senior"?</strong> Cats: 10+. Small dogs: 8-10. Large dogs: 6-8. Giant breeds: 5-6.</li>
+                <li><strong>Senior wellness panels:</strong> CBC, chemistry, urinalysis, thyroid, blood pressure</li>
+                <li><strong>Common senior conditions:</strong> Arthritis, kidney disease, dental disease, cognitive dysfunction, cancer, heart disease</li>
+                <li><strong>Signs of pain pets hide:</strong> Decreased appetite, reluctance to jump, sleeping more, personality changes, panting at rest</li>
+                <li><strong>Environmental modifications:</strong> Ramps, orthopedic beds, raised food bowls, non-slip mats</li>
+                <li><strong>Quality of life assessment:</strong> How to know when your pet is struggling vs. having a bad day</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 5: Florida-Specific Pet Safety -->
+          <article class="resource-card fade-in-up">
+            <div class="resource-card-header">
+              <span class="resource-tag">Local Guide</span>
+              <h3>Florida-Specific Pet Safety</h3>
+              <p>Living in Central Florida means year-round parasite pressure, heat risks, and wildlife encounters. Here's what every Florida pet parent needs to know.</p>
+            </div>
+            <div class="resource-meta">
+              <span class="read-time">5 min read</span>
+              <button class="expand-btn" data-expand="resource-5" aria-expanded="false" aria-controls="resource-5">
+                <span class="expand-text">Read More</span> <span class="expand-icon" aria-hidden="true">&#x25BC;</span>
+              </button>
+            </div>
+            <div class="resource-expanded" id="resource-5">
+              <ul>
+                <li><strong>Heartworm:</strong> Transmitted by mosquitoes, year-round risk in Florida, monthly prevention is non-negotiable</li>
+                <li><strong>Fleas & ticks:</strong> Year-round in Florida (no winter kill), use veterinary-recommended products only (OTC products can be dangerous)</li>
+                <li><strong>Heat safety:</strong> No walks on hot pavement (test with your hand — 5 seconds), no cars even with windows cracked, watch for signs of heat stroke</li>
+                <li><strong>Bufo toads (cane toads):</strong> Toxic — if your dog mouths one, rinse mouth immediately and call us</li>
+                <li><strong>Snakes:</strong> Coral snakes and water moccasins are present — keep dogs leashed in wooded areas</li>
+                <li><strong>Algae blooms:</strong> Blue-green algae in lakes is toxic to dogs — check local alerts before lake visits</li>
+                <li><strong>Hurricane prep:</strong> Have 2 weeks of food/medication, know your evacuation zone, carrier for cats</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 6: Emergency vs. Urgent vs. "Can It Wait?" -->
+          <article class="resource-card fade-in-up">
+            <div class="resource-card-header">
+              <span class="resource-tag">Emergency Guide</span>
+              <h3>Emergency vs. Urgent vs. "Can It Wait?"</h3>
+              <p>Not sure if your pet's situation is an emergency? Use this guide to decide whether to call us, come in, or schedule a regular appointment.</p>
+            </div>
+            <div class="resource-meta">
+              <span class="read-time">4 min read</span>
+              <button class="expand-btn" data-expand="resource-6" aria-expanded="false" aria-controls="resource-6">
+                <span class="expand-text">Read More</span> <span class="expand-icon" aria-hidden="true">&#x25BC;</span>
+              </button>
+            </div>
+            <div class="resource-expanded" id="resource-6">
+              <ul>
+                <li><strong>TRUE EMERGENCY (call immediately / go to ER):</strong> Not breathing, unconscious, actively seizing for >3 min, hit by car, known toxin ingestion, bloated abdomen with retching, profuse bleeding</li>
+                <li><strong>URGENT (come in same-day or call for triage):</strong> Vomiting >3 times in 24hrs, not eating for >24hrs (cats) or >48hrs (dogs), limping/non-weight-bearing, eye injury/squinting, difficulty urinating, bloody diarrhea</li>
+                <li><strong>CAN WAIT for appointment:</strong> Mild intermittent limping, occasional vomiting with normal energy, skin lumps/bumps (not rapidly growing), ear scratching, mild diarrhea with normal energy, bad breath</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4.4 Downloadable Resources -->
+    <section class="section" style="background: var(--cream);">
+      <div class="container">
+        <h2 class="section-title fade-in-up">Downloadable Forms</h2>
+        <p class="section-subtitle fade-in-up">Print and complete before your visit to save time.</p>
+        <div class="downloads-grid fade-in-up">
+          <a href="#" class="download-card" aria-label="Download New Patient Registration Form PDF">
+            <span class="download-icon" aria-hidden="true">&#x1F4C4;</span>
+            <span>New Patient Registration Form (PDF)</span>
+          </a>
+          <a href="#" class="download-card" aria-label="Download Surgical Consent and Pre-Op Instructions PDF">
+            <span class="download-icon" aria-hidden="true">&#x1F4C4;</span>
+            <span>Surgical Consent & Pre-Op Instructions (PDF)</span>
+          </a>
+          <a href="#" class="download-card" aria-label="Download End-of-Life Decision Guide PDF">
+            <span class="download-icon" aria-hidden="true">&#x1F4C4;</span>
+            <span>End-of-Life Decision Guide (PDF)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container fade-in-up">
+        <h2>Have questions? We're always happy to help.</h2>
+        <a href="contact.html" class="btn btn-white">Get in Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Pawprint <span>&</span> Co.</div>
+          <p class="tagline">Where Every Tail Has a Story</p>
+          <p>Comprehensive veterinary care in Ocoee, FL. AAHA-accredited. Fear Free certified. Accepting new patients.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="team.html">Our Team</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Book Appointment</a>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <a href="services.html#wellness">Wellness & Prevention</a>
+          <a href="services.html#internal">Internal Medicine</a>
+          <a href="services.html#surgery">Surgery & Dental</a>
+          <a href="services.html#emergency">Urgent Care</a>
+          <a href="services.html#surgery">Dental Cleanings</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>3280 West Colonial Drive<br>Ocoee, FL 34761</p>
+          <a href="tel:4075550319">(407) 555-0319</a>
+          <a href="tel:4075550911" class="emergency-phone">Emergency: (407) 555-0911</a>
+          <a href="mailto:hello@pawprintandco.com">hello@pawprintandco.com</a>
+          <p style="margin-top: 0.5rem; font-size: 0.85rem;">Mon–Fri 7:30a–6p | Sat 8a–2p<br>Sun Closed (Emergency available)</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2024 Pawprint & Co. Veterinary Wellness. All rights reserved.</span>
+        <span>Website crafted with &#x1F43E; in Ocoee, FL</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

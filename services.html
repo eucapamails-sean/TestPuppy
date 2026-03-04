@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Pawprint & Co. Veterinary Wellness</title>
+  <meta name="description" content="Comprehensive veterinary services including wellness exams, internal medicine, surgery, dental care, and 24/7 emergency triage in Ocoee, FL.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Emergency Banner -->
+  <div class="emergency-banner" role="alert">
+    &#x1F6A8; 24/7 Emergency Line: <a href="tel:4075550911">(407) 555-0911</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav-wrapper" role="navigation" aria-label="Main navigation">
+    <div class="nav">
+      <a href="index.html" class="nav-logo" aria-label="Pawprint & Co. Home">Pawprint <span>&</span> Co.</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active" aria-current="page">Services</a>
+        <a href="team.html">Our Team</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay" aria-hidden="true"></div>
+  <div class="mobile-drawer" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <a href="index.html">Home</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="team.html">Our Team</a>
+    <a href="resources.html">Resources</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <!-- 2.1 Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="fade-in-up">Comprehensive Care Under One Roof</h1>
+        <p class="fade-in-up">From puppy's first checkup to managing complex chronic conditions — we handle it all with the same level of attention.</p>
+      </div>
+    </section>
+
+    <!-- 2.2 Service Categories (Tabbed Interface) -->
+    <section class="tabs-container section">
+      <div class="container">
+        <!-- Desktop Tabs -->
+        <div class="tab-bar" role="tablist" aria-label="Service categories">
+          <button class="tab-btn active" data-tab="wellness" role="tab" aria-selected="true" aria-controls="wellness">Wellness & Prevention</button>
+          <button class="tab-btn" data-tab="internal" role="tab" aria-selected="false" aria-controls="internal">Internal Medicine</button>
+          <button class="tab-btn" data-tab="surgery" role="tab" aria-selected="false" aria-controls="surgery">Surgery & Dental</button>
+          <button class="tab-btn" data-tab="emergency" role="tab" aria-selected="false" aria-controls="emergency">Urgent & Emergency Care</button>
+        </div>
+
+        <!-- Mobile Accordions -->
+        <button class="accordion-header active" data-accordion="wellness" aria-expanded="true">
+          Wellness & Prevention <span class="accordion-icon" aria-hidden="true">&#x25BC;</span>
+        </button>
+        <div class="accordion-content active" data-accordion="wellness">
+          <ul>
+            <li>Annual & semi-annual wellness exams</li>
+            <li>Core & lifestyle vaccinations (customized to your pet's risk factors)</li>
+            <li>Parasite prevention (heartworm, flea, tick — year-round in Florida)</li>
+            <li>Nutrition counseling & weight management programs</li>
+            <li>Senior wellness panels (bloodwork, urinalysis, thyroid screening for pets 7+)</li>
+            <li>Microchipping</li>
+            <li>Health certificates for travel</li>
+            <li>New puppy/kitten starter packages</li>
+          </ul>
+          <div class="callout-box">
+            &#x1F43E; <strong>New Patient Special:</strong> First wellness exam includes a free nutrition consultation ($75 value). Mention this when booking.
+          </div>
+        </div>
+
+        <button class="accordion-header" data-accordion="internal" aria-expanded="false">
+          Internal Medicine <span class="accordion-icon" aria-hidden="true">&#x25BC;</span>
+        </button>
+        <div class="accordion-content" data-accordion="internal">
+          <ul>
+            <li>Dr. Okafor is a board-certified internist (DACVIM) — one of only 3 in the greater Orlando area</li>
+            <li>Endoscopy & minimally invasive diagnostics</li>
+            <li>Ultrasound & echocardiography (in-house, no referral needed)</li>
+            <li>Chronic disease management: diabetes, Cushing's, Addison's, IBD, kidney disease, liver disease</li>
+            <li>Cancer staging & chemotherapy coordination</li>
+            <li>Immune-mediated disease treatment</li>
+            <li>Second opinion consultations (we welcome outside records)</li>
+            <li>Complex case management with multi-specialist collaboration</li>
+          </ul>
+          <div class="callout-box">
+            &#x1F52C; <strong>Why Board Certification Matters:</strong> A DACVIM internist completes 4 years of vet school + 1 year internship + 3 years residency + a grueling board exam. It's the veterinary equivalent of a medical specialist. Your pet gets that expertise here, not at a referral hospital an hour away.
+          </div>
+        </div>
+
+        <button class="accordion-header" data-accordion="surgery" aria-expanded="false">
+          Surgery & Dental <span class="accordion-icon" aria-hidden="true">&#x25BC;</span>
+        </button>
+        <div class="accordion-content" data-accordion="surgery">
+          <ul>
+            <li>Soft tissue surgery (mass removals, splenectomy, gastropexy, bladder stone removal)</li>
+            <li>Orthopedic surgery (cruciate repair, fracture stabilization, luxating patella)</li>
+            <li>Dental cleanings under anesthesia with full-mouth digital radiographs</li>
+            <li>Dental extractions (simple and surgical)</li>
+            <li>Pre-surgical bloodwork and risk assessment included in every procedure</li>
+            <li>Multimodal pain management (we take pain seriously — every patient gets a custom pain plan)</li>
+            <li>Dedicated surgical suite with full monitoring (SpO2, ECG, blood pressure, temperature, capnography)</li>
+          </ul>
+          <div class="callout-box">
+            &#x1F9B7; <strong>87% of dogs and 70% of cats have dental disease by age 3.</strong> If your pet has bad breath, it's not "just dog breath" — it's likely a sign of infection. Schedule a dental consult.
+          </div>
+        </div>
+
+        <button class="accordion-header" data-accordion="emergency" aria-expanded="false">
+          Urgent & Emergency Care <span class="accordion-icon" aria-hidden="true">&#x25BC;</span>
+        </button>
+        <div class="accordion-content" data-accordion="emergency">
+          <ul>
+            <li>Walk-in urgent care during clinic hours (no appointment needed for true urgencies)</li>
+            <li>24/7 emergency phone triage — call <a href="tel:4075550911">(407) 555-0911</a> anytime</li>
+            <li>On-site diagnostics: digital x-ray, ultrasound, in-house bloodwork (results in 15 minutes)</li>
+            <li>Oxygen therapy, IV fluid therapy, emergency stabilization</li>
+            <li>After-hours: We partner with VCA Emergency for overnight hospitalization and will transfer records automatically</li>
+            <li>Common urgencies we handle: vomiting/diarrhea, difficulty breathing, suspected toxin ingestion, wounds/lacerations, urinary obstruction, seizures, collapse</li>
+          </ul>
+          <div class="callout-box emergency">
+            &#x1F6A8; <strong>If your pet is experiencing a life-threatening emergency after hours, call <a href="tel:4075550911">(407) 555-0911</a> immediately.</strong> We will triage by phone and direct you to the nearest emergency facility if needed.
+          </div>
+        </div>
+
+        <!-- Desktop Tab Content -->
+        <div class="tab-content active" id="wellness" role="tabpanel">
+          <h3>Wellness & Prevention</h3>
+          <ul>
+            <li>Annual & semi-annual wellness exams</li>
+            <li>Core & lifestyle vaccinations (customized to your pet's risk factors)</li>
+            <li>Parasite prevention (heartworm, flea, tick — year-round in Florida)</li>
+            <li>Nutrition counseling & weight management programs</li>
+            <li>Senior wellness panels (bloodwork, urinalysis, thyroid screening for pets 7+)</li>
+            <li>Microchipping</li>
+            <li>Health certificates for travel</li>
+            <li>New puppy/kitten starter packages</li>
+          </ul>
+          <div class="callout-box">
+            &#x1F43E; <strong>New Patient Special:</strong> First wellness exam includes a free nutrition consultation ($75 value). Mention this when booking.
+          </div>
+        </div>
+
+        <div class="tab-content" id="internal" role="tabpanel">
+          <h3>Internal Medicine</h3>
+          <ul>
+            <li>Dr. Okafor is a board-certified internist (DACVIM) — one of only 3 in the greater Orlando area</li>
+            <li>Endoscopy & minimally invasive diagnostics</li>
+            <li>Ultrasound & echocardiography (in-house, no referral needed)</li>
+            <li>Chronic disease management: diabetes, Cushing's, Addison's, IBD, kidney disease, liver disease</li>
+            <li>Cancer staging & chemotherapy coordination</li>
+            <li>Immune-mediated disease treatment</li>
+            <li>Second opinion consultations (we welcome outside records)</li>
+            <li>Complex case management with multi-specialist collaboration</li>
+          </ul>
+          <div class="callout-box">
+            &#x1F52C; <strong>Why Board Certification Matters:</strong> A DACVIM internist completes 4 years of vet school + 1 year internship + 3 years residency + a grueling board exam. It's the veterinary equivalent of a medical specialist. Your pet gets that expertise here, not at a referral hospital an hour away.
+          </div>
+        </div>
+
+        <div class="tab-content" id="surgery" role="tabpanel">
+          <h3>Surgery & Dental</h3>
+          <ul>
+            <li>Soft tissue surgery (mass removals, splenectomy, gastropexy, bladder stone removal)</li>
+            <li>Orthopedic surgery (cruciate repair, fracture stabilization, luxating patella)</li>
+            <li>Dental cleanings under anesthesia with full-mouth digital radiographs</li>
+            <li>Dental extractions (simple and surgical)</li>
+            <li>Pre-surgical bloodwork and risk assessment included in every procedure</li>
+            <li>Multimodal pain management (we take pain seriously — every patient gets a custom pain plan)</li>
+            <li>Dedicated surgical suite with full monitoring (SpO2, ECG, blood pressure, temperature, capnography)</li>
+          </ul>
+          <div class="callout-box">
+            &#x1F9B7; <strong>87% of dogs and 70% of cats have dental disease by age 3.</strong> If your pet has bad breath, it's not "just dog breath" — it's likely a sign of infection. Schedule a dental consult.
+          </div>
+        </div>
+
+        <div class="tab-content" id="emergency" role="tabpanel">
+          <h3>Urgent & Emergency Care</h3>
+          <ul>
+            <li>Walk-in urgent care during clinic hours (no appointment needed for true urgencies)</li>
+            <li>24/7 emergency phone triage — call <a href="tel:4075550911">(407) 555-0911</a> anytime</li>
+            <li>On-site diagnostics: digital x-ray, ultrasound, in-house bloodwork (results in 15 minutes)</li>
+            <li>Oxygen therapy, IV fluid therapy, emergency stabilization</li>
+            <li>After-hours: We partner with VCA Emergency for overnight hospitalization and will transfer records automatically</li>
+            <li>Common urgencies we handle: vomiting/diarrhea, difficulty breathing, suspected toxin ingestion, wounds/lacerations, urinary obstruction, seizures, collapse</li>
+          </ul>
+          <div class="callout-box emergency">
+            &#x1F6A8; <strong>If your pet is experiencing a life-threatening emergency after hours, call <a href="tel:4075550911">(407) 555-0911</a> immediately.</strong> We will triage by phone and direct you to the nearest emergency facility if needed.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.3 Pricing Transparency -->
+    <section class="pricing-section section">
+      <div class="container">
+        <h2 class="section-title fade-in-up">Transparent Pricing</h2>
+        <p class="section-subtitle fade-in-up">Because you deserve to know what to expect.</p>
+        <div class="fade-in-up">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Price Range</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Wellness Exam</td><td>$65 – $85</td></tr>
+              <tr><td>Vaccination Package (Core)</td><td>$120 – $160</td></tr>
+              <tr><td>Senior Wellness Panel</td><td>$185 – $245</td></tr>
+              <tr><td>Dental Cleaning (Cat)</td><td>$380 – $550</td></tr>
+              <tr><td>Dental Cleaning (Dog)</td><td>$420 – $680</td></tr>
+              <tr><td>Soft Tissue Surgery</td><td>$800 – $2,500</td></tr>
+              <tr><td>Orthopedic Surgery</td><td>$2,200 – $4,500</td></tr>
+              <tr><td>Internal Medicine Consult</td><td>$225 – $350</td></tr>
+              <tr><td>Ultrasound</td><td>$350 – $500</td></tr>
+              <tr><td>Urgent Care Visit</td><td>$120 – $180</td></tr>
+            </tbody>
+          </table>
+          <p class="pricing-note">All estimates. Final pricing depends on your pet's specific needs. We always provide a written estimate before proceeding. No surprises.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container fade-in-up">
+        <h2>Ready to schedule? We'd love to meet your pet.</h2>
+        <a href="contact.html" class="btn btn-white">Book an Appointment</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Pawprint <span>&</span> Co.</div>
+          <p class="tagline">Where Every Tail Has a Story</p>
+          <p>Comprehensive veterinary care in Ocoee, FL. AAHA-accredited. Fear Free certified. Accepting new patients.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="team.html">Our Team</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Book Appointment</a>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <a href="services.html#wellness">Wellness & Prevention</a>
+          <a href="services.html#internal">Internal Medicine</a>
+          <a href="services.html#surgery">Surgery & Dental</a>
+          <a href="services.html#emergency">Urgent Care</a>
+          <a href="services.html#surgery">Dental Cleanings</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>3280 West Colonial Drive<br>Ocoee, FL 34761</p>
+          <a href="tel:4075550319">(407) 555-0319</a>
+          <a href="tel:4075550911" class="emergency-phone">Emergency: (407) 555-0911</a>
+          <a href="mailto:hello@pawprintandco.com">hello@pawprintandco.com</a>
+          <p style="margin-top: 0.5rem; font-size: 0.85rem;">Mon–Fri 7:30a–6p | Sat 8a–2p<br>Sun Closed (Emergency available)</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2024 Pawprint & Co. Veterinary Wellness. All rights reserved.</span>
+        <span>Website crafted with &#x1F43E; in Ocoee, FL</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

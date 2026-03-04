@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Book — Pawprint & Co. Veterinary Wellness</title>
+  <meta name="description" content="Book an appointment at Pawprint & Co. Veterinary Wellness in Ocoee, FL. Call (407) 555-0319 or fill out our online booking form.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Emergency Banner -->
+  <div class="emergency-banner" role="alert">
+    &#x1F6A8; 24/7 Emergency Line: <a href="tel:4075550911">(407) 555-0911</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav-wrapper" role="navigation" aria-label="Main navigation">
+    <div class="nav">
+      <a href="index.html" class="nav-logo" aria-label="Pawprint & Co. Home">Pawprint <span>&</span> Co.</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="team.html">Our Team</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html" class="active" aria-current="page">Contact</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay" aria-hidden="true"></div>
+  <div class="mobile-drawer" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="team.html">Our Team</a>
+    <a href="resources.html">Resources</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+
+  <main>
+    <!-- 5.1 Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="fade-in-up">Let's Talk About Your Pet</h1>
+        <p class="fade-in-up">Whether it's a routine checkup or a concern that's keeping you up at night — we're here.</p>
+      </div>
+    </section>
+
+    <!-- 5.2 Contact Info Cards -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Visit Us -->
+          <div class="contact-card fade-in-up">
+            <h3>&#x1F4CD; Visit Us</h3>
+            <div class="map-placeholder">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.5!2d-81.54!3d28.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDMzJzAwLjAiTiA4McKwMzInMjQuMCJX!5e0!3m2!1sen!2sus!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Pawprint & Co. location at 3280 West Colonial Drive, Ocoee, FL"></iframe>
+            </div>
+            <p><strong>3280 West Colonial Drive<br>Ocoee, FL 34761</strong></p>
+            <p>Free parking lot behind the building. Enter through the garden gate — yes, we have a garden.</p>
+          </div>
+
+          <!-- Call or Text -->
+          <div class="contact-card fade-in-up">
+            <h3>&#x1F4DE; Call or Text</h3>
+            <p><strong>Main:</strong> <a href="tel:4075550319">(407) 555-0319</a></p>
+            <p><strong>Emergency 24/7:</strong> <a href="tel:4075550911" class="emergency-phone">(407) 555-0911</a></p>
+            <p><strong>Email:</strong> <a href="mailto:hello@pawprintandco.com">hello@pawprintandco.com</a></p>
+            <p style="margin-top: 1rem;">For non-urgent questions, text us! We respond within 2 hours during business hours.</p>
+          </div>
+
+          <!-- Hours -->
+          <div class="contact-card fade-in-up">
+            <h3>&#x1F552; Hours</h3>
+            <table class="hours-table" aria-label="Business hours">
+              <tbody>
+                <tr><td>Monday</td><td>7:30 AM – 6:00 PM</td></tr>
+                <tr><td>Tuesday</td><td>7:30 AM – 6:00 PM</td></tr>
+                <tr><td>Wednesday</td><td>7:30 AM – 7:00 PM (late night)</td></tr>
+                <tr><td>Thursday</td><td>7:30 AM – 6:00 PM</td></tr>
+                <tr><td>Friday</td><td>7:30 AM – 5:00 PM</td></tr>
+                <tr><td>Saturday</td><td>8:00 AM – 2:00 PM</td></tr>
+                <tr><td>Sunday</td><td>Closed (Emergency line available)</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5.3 Appointment Booking Form -->
+    <section class="booking-section section">
+      <div class="container">
+        <div class="booking-form-wrapper fade-in-up">
+          <h2>Request an Appointment</h2>
+          <p class="form-note">We'll confirm your appointment within 4 business hours. For urgent matters, please call.</p>
+
+          <form id="booking-form" novalidate>
+            <div class="form-grid">
+
+              <!-- Pet Parent Name -->
+              <div class="form-group">
+                <label for="parent-name">Pet Parent Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="parent-name" name="parent-name" required aria-required="true">
+                <span class="error-message">Please enter your name</span>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" required aria-required="true">
+                <span class="error-message">Please enter a valid email</span>
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <label for="phone">Phone <span class="required" aria-hidden="true">*</span></label>
+                <input type="tel" id="phone" name="phone" required aria-required="true">
+                <span class="error-message">Please enter your phone number</span>
+              </div>
+
+              <!-- Pet Name -->
+              <div class="form-group">
+                <label for="pet-name">Pet Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="pet-name" name="pet-name" required aria-required="true">
+                <span class="error-message">Please enter your pet's name</span>
+              </div>
+
+              <!-- Species -->
+              <div class="form-group">
+                <label>Species <span class="required" aria-hidden="true">*</span></label>
+                <div class="radio-group" role="radiogroup" aria-label="Species">
+                  <label class="radio-option">
+                    <input type="radio" name="species" value="dog"> Dog
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="species" value="cat"> Cat
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="species" value="other"> Other
+                  </label>
+                </div>
+                <span class="error-message radio-error species-error" style="display:none;">Please select a species</span>
+              </div>
+
+              <!-- Breed -->
+              <div class="form-group">
+                <label for="breed">Breed</label>
+                <input type="text" id="breed" name="breed">
+              </div>
+
+              <!-- Pet Age -->
+              <div class="form-group">
+                <label for="pet-age">Pet Age</label>
+                <select id="pet-age" name="pet-age">
+                  <option value="">Select age range</option>
+                  <option value="under-1">Under 1</option>
+                  <option value="1-3">1-3</option>
+                  <option value="4-6">4-6</option>
+                  <option value="7-9">7-9</option>
+                  <option value="10-12">10-12</option>
+                  <option value="13+">13+</option>
+                </select>
+              </div>
+
+              <!-- Reason for Visit -->
+              <div class="form-group">
+                <label for="reason">Reason for Visit</label>
+                <select id="reason" name="reason">
+                  <option value="">Select a reason</option>
+                  <option value="wellness">Wellness Exam</option>
+                  <option value="vaccination">Vaccination</option>
+                  <option value="sick">Sick/Not Feeling Well</option>
+                  <option value="dental">Dental Consult</option>
+                  <option value="surgery">Surgery Consult</option>
+                  <option value="internal">Internal Medicine Referral</option>
+                  <option value="second-opinion">Second Opinion</option>
+                  <option value="new-pet">New Puppy/Kitten</option>
+                  <option value="senior">Senior Screening</option>
+                  <option value="urgent">Urgent Concern</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <!-- Preferred Day -->
+              <div class="form-group full-width">
+                <label>Preferred Day(s) <span style="font-weight: 400; color: var(--gray-400);">(select all that work)</span></label>
+                <div class="checkbox-group">
+                  <label class="checkbox-option">
+                    <input type="checkbox" name="preferred-day" value="mon"> Mon
+                  </label>
+                  <label class="checkbox-option">
+                    <input type="checkbox" name="preferred-day" value="tue"> Tue
+                  </label>
+                  <label class="checkbox-option">
+                    <input type="checkbox" name="preferred-day" value="wed"> Wed
+                  </label>
+                  <label class="checkbox-option">
+                    <input type="checkbox" name="preferred-day" value="thu"> Thu
+                  </label>
+                  <label class="checkbox-option">
+                    <input type="checkbox" name="preferred-day" value="fri"> Fri
+                  </label>
+                  <label class="checkbox-option">
+                    <input type="checkbox" name="preferred-day" value="sat"> Sat
+                  </label>
+                </div>
+              </div>
+
+              <!-- Preferred Time -->
+              <div class="form-group full-width">
+                <label>Preferred Time</label>
+                <div class="radio-group" role="radiogroup" aria-label="Preferred time">
+                  <label class="radio-option">
+                    <input type="radio" name="preferred-time" value="morning"> Morning (7:30-11)
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="preferred-time" value="midday"> Midday (11-2)
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="preferred-time" value="afternoon"> Afternoon (2-5)
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="preferred-time" value="evening"> Evening Wed Only (5-7)
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="preferred-time" value="no-preference"> No Preference
+                  </label>
+                </div>
+              </div>
+
+              <!-- First Visit? -->
+              <div class="form-group full-width">
+                <label>Is this your first visit? <span class="required" aria-hidden="true">*</span></label>
+                <div class="radio-group" role="radiogroup" aria-label="First visit">
+                  <label class="radio-option">
+                    <input type="radio" name="first-visit" value="yes"> Yes
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="first-visit" value="no"> No
+                  </label>
+                </div>
+                <span class="error-message radio-error visit-error" style="display:none;">Please indicate if this is your first visit</span>
+              </div>
+
+              <!-- Additional Notes -->
+              <div class="form-group full-width">
+                <label for="notes">Additional Notes <span style="font-weight: 400; color: var(--gray-400);">(optional)</span></label>
+                <textarea id="notes" name="notes" placeholder="Tell us about any concerns, symptoms, or special needs for your pet..."></textarea>
+              </div>
+
+              <!-- File Upload Zone -->
+              <div class="form-group full-width">
+                <label>Upload Documents <span style="font-weight: 400; color: var(--gray-400);">(optional)</span></label>
+                <div class="upload-zone" tabindex="0" role="button" aria-label="Upload documents">
+                  <div class="upload-icon" aria-hidden="true">&#x1F4C1;</div>
+                  <p>Drag & drop files here, or <span class="browse-link">browse</span></p>
+                  <p style="font-size: 0.8rem; color: var(--gray-400); margin-top: 0.5rem;">Upload previous records, lab results, or photos of concern</p>
+                  <input type="file" multiple style="display: none;" aria-hidden="true">
+                </div>
+              </div>
+
+              <!-- Submit -->
+              <div class="form-group full-width" style="text-align: center; margin-top: 1rem;">
+                <button type="submit" class="btn btn-primary" style="min-width: 250px;">Request Appointment</button>
+              </div>
+
+            </div>
+          </form>
+
+          <!-- Success State -->
+          <div class="form-success" aria-live="polite">
+            <div class="success-icon" aria-hidden="true">&#x2705;</div>
+            <h3>Thank You!</h3>
+            <p>We'll confirm your appointment within 4 business hours.<br>If this is urgent, please call <a href="tel:4075550319">(407) 555-0319</a>.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5.4 FAQ Quick Links -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title fade-in-up">Before You Book</h2>
+        <p class="section-subtitle fade-in-up">You might find these helpful:</p>
+        <div class="faq-links fade-in-up">
+          <a href="resources.html" class="faq-card">&#x1F4D6; New Patient Guide</a>
+          <a href="resources.html" class="faq-card">&#x1F6A8; Emergency vs. Urgent Guide</a>
+          <a href="resources.html" class="faq-card">&#x1F4CB; What to Bring to Your First Visit</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Pawprint <span>&</span> Co.</div>
+          <p class="tagline">Where Every Tail Has a Story</p>
+          <p>Comprehensive veterinary care in Ocoee, FL. AAHA-accredited. Fear Free certified. Accepting new patients.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="team.html">Our Team</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Book Appointment</a>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <a href="services.html#wellness">Wellness & Prevention</a>
+          <a href="services.html#internal">Internal Medicine</a>
+          <a href="services.html#surgery">Surgery & Dental</a>
+          <a href="services.html#emergency">Urgent Care</a>
+          <a href="services.html#surgery">Dental Cleanings</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>3280 West Colonial Drive<br>Ocoee, FL 34761</p>
+          <a href="tel:4075550319">(407) 555-0319</a>
+          <a href="tel:4075550911" class="emergency-phone">Emergency: (407) 555-0911</a>
+          <a href="mailto:hello@pawprintandco.com">hello@pawprintandco.com</a>
+          <p style="margin-top: 0.5rem; font-size: 0.85rem;">Mon–Fri 7:30a–6p | Sat 8a–2p<br>Sun Closed (Emergency available)</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2024 Pawprint & Co. Veterinary Wellness. All rights reserved.</span>
+        <span>Website crafted with &#x1F43E; in Ocoee, FL</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
